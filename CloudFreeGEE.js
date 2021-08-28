@@ -9,8 +9,8 @@ var date2 = '2021-12-31';
 
 //100% cloud free function
 var maskingFunction = function cloudFree (image) {
-  var qaBand = image.select(['BQA']).eq(2720) //memilih pixel yang bersih aja
-  return image.updateMask(qaBand)//return hasil sesuai fungsi
+  var qaBand = image.select(['BQA']).eq(2720) 
+  return image.updateMask(qaBand)
 }
 
 //filter by area and date, also iterating the cloud free function into every image collection
